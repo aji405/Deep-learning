@@ -1,0 +1,20 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Sigmoid function
+def sigmoid(z):
+    return 1 / (1 + np.exp(-z))
+
+# Create x values
+x = np.arange(-5, 5, 0.1)
+
+# Plot sigmoid curve
+plt.plot(x, sigmoid(x), color="pink")
+
+plt.title("Visualization of the Sigmoid Function")
+plt.xlabel("x")
+plt.ylabel("Sigmoid(x)")
+
+plt.grid(True)
+
+plt.show()
